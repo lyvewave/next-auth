@@ -261,6 +261,8 @@ module.exports = ({
                 return functions.insert({
                   name: profile.name,
                   email: profile.email,
+                  avatar: profile.photo,
+                  fullName: profile.fullName,
                   [providerName.toLowerCase()]: {
                     id: profile.id,
                     accessToken: accessToken,
